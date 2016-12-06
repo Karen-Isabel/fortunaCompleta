@@ -16,7 +16,7 @@
     "node",
     "server"
   ],
-  "author": "@Karen Lopez",
+  "author": "@KarenLopez",
   "license": "ISC",
   "devDependencies": {
     "mongoose": "^4.7.0",
