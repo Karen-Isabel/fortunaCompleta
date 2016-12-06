@@ -1,0 +1,29 @@
+{
+  "name": "fortune_cookie",
+  "description": "Proyecto Final PAW",
+  "main": "server.js",
+  "authors": [
+    "@RicardoHdez"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "http",
+    "node",
+    "server"
+  ],
+  "homepage": "https://github.com/RicardoHdez/08fortune_cookie",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sweetalert": "^1.1.3",
+    "materialize": "^0.97.8",
+    "jquery": "^3.1.1"
+  }
+}

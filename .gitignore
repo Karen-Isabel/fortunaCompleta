@@ -1,0 +1,5 @@
+#Ignorar modulos del backend
+node_modules
+#Ignorar los paquetes JSON
+#Ignorando modulos frontend
+static/vendor
