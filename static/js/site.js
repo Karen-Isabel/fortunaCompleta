@@ -5,6 +5,6 @@ var getFortuneFromServer = function getFortuneFromServer(){
                 console.log('> status ' + status);
                 //presentar el mensaje 
                 swal(
-                    data.mensaje);
+                    data.papers);
             },"json");
         }

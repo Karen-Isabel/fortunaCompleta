@@ -5,7 +5,7 @@ module.exports = {
     "getFortune": function (cb) {
         //mensajes aleatorios guardados de la base de datos
         //se ingresa el nombre de la base de datos  y el nombre que le dimos a la collecion
-        mongoClient.connect("mongodb://127.0.0.1:27017/fortuna",
+        mongoClient.connect("mongodb://karenareli:karen12345@ds117348.mlab.com:17348/fortuneapps",
         function(err, db){
             var frases = db.collection("frases");
 

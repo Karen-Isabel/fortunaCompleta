@@ -20,7 +20,7 @@ app.use(express.static("static"));
 //variables para mongo
 var mongodb = require('mongodb');
 var mongoClient = mongodb.MongoClient;
-var connectionUrl = 'mongodb://localhost/fortuna';
+var connectionUrl = 'mongodb://karenareli:karen12345@ds117348.mlab.com:17348/fortuneapps';
 //extraer formulario con body-parser
 app.use(bodyParser());
 
