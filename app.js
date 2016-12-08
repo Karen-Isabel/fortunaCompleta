@@ -1,6 +1,6 @@
 var mongo = require("mongodb");
 var mongoClient = mongo.MongoClient;
- connectionUrl = "mongodb://127.0.0.1:27017/fortuneapp";
+ connectionUrl = "mongodb://127.0.0.1:27017/fortuna";
 
 mongoClient.connect(connectionUrl, function(err, db){
     //Verificar que si conecto
@@ -8,15 +8,15 @@ mongoClient.connect(connectionUrl, function(err, db){
         console.log("No se conecto la base de datos");
         throw err;
     }else{
-        var papers = db.collection('papers');
-        //ARMANDO EL DOCUMENTO
+        var frases = db.collection('frases');
+        //enviio de mensaje nuevo
         var mensaje = "";
         for( var i = 2; i<process.argv.length; i++){
             mensaje += (process.argv[i] + " ");
         }
         console.log("Este es el mensaje " + mensaje);
-        papers.insert({
-            "message":mensaje
+        frases.insert({
+            "mensaje":mensaje
         }, function(err, res){
             if(err){
                console.log('No se pudo insertar') ;

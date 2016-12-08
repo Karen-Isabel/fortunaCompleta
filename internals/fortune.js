@@ -3,7 +3,8 @@ var mongoClient = mongo.MongoClient;
 
 module.exports = {
     "getFortune": function (cb) {
-        //Logica que obtiene un mensaje aleatorio
+        //mensajes aleatorios guardados de la base de datos
+        //se ingresa el nombre de la base de datos  y el nombre que le dimos a la collecion
         mongoClient.connect("mongodb://127.0.0.1:27017/fortuna",
         function(err, db){
             var frases = db.collection("frases");
@@ -11,16 +12,16 @@ module.exports = {
             var consulta = frases.find({});
 
             consulta.toArray(function(err, data){
-
+//confirmacion de el dato que agregamos
                 var selector = Math.round(Math.random(0)* data.length);
-                console.log("El numero de tu fortuna es: " + selector);
-                // Armando Objeto Respuesta
+                console.log("Tu amigo de intercmbio es:: " + selector);
+                //  Respuesta
                 // Convertir en cadena escrita el Objeto Json
                 var fortunePaperObj = JSON.stringify(data[selector]);
-                // Cerrar mongo
+                // Cerra la base de datos
                 db.close();
                 //Ejecutp el callback pasandole el parametro fortunePaper
-                console.log("la fortuna es: " + fortunePaperObj);
+                console.log("Tu amigo es: " + fortunePaperObj);
                 cb(fortunePaperObj);
             });
         });

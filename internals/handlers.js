@@ -22,8 +22,6 @@ var _getFortune = function(req, res){
     });
 }
 
-
-
 //------>Objeto manejador
 var handler = {};
 
@@ -31,5 +29,5 @@ var handler = {};
 handler["/getauthor"] = _getAuthor;
 handler["/getacookie"] = _getFortune;
 
-//Necesario exportar el objeto, para que el server lo lea
+//Necesario exportar el objeto para que el server lo lea
 module.exports = handler;

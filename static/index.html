@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Mi estilo asombroso</title>
     <!--icono de pagina-->
-    <link rel="icon" href="./img/icono.png" type="image/png">
+    <link rel="icon" href="./img/nav4.jpg" type="image/jpg">
     <!--Sweetalert-->
     <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
@@ -45,13 +45,25 @@
         </div>
         <div class="parallax"><img src="./img/tec.png" alt="Unsplashed img 1"></div>
     </div>
-<!--Termina contenido Galleta de la fortuna -->
+<!--Termina contenido -->
+
 <div class="divider"></div>
 <div>
-    <h5 class="center-align amber-text">Herramientas de trabajo</h5>
+  <div class="footer-copyright   red darken-3">
+      <div class="container">
+    <h5 class="center-align amber-text">Agrega un amigo!</h5>
 </div>
-  
-<!--Termina github      -->
+  <form action="/" method="POST">
+    <input type="hidden" name="oculto" val="campo oculto pero no invisible!">
+    <div>
+	    <label class="center-align amber-text" for="campoamigo ">Escribe el nombre de tu amigo: </label>
+		    <input type="text" id="campoamigo" name="amigo">
+   </div>
+    <div>
+	    <button type="submit">Enviar</button>
+    </div>
+</form>
+
 <!--Pie de pagina-->
 <footer class="page-footer amber lighten-2">
     <div class="container">
@@ -76,9 +88,14 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright pink accent-4">
+
+
+
+
+    
+    <div class="footer-copyright  red darken-4">
       <div class="container">
-      Hecho por <a class="cyan-text text-white">KAREN ISABEL LOPEZ TORRES Y ARELI CAMACHO</a>
+      Hecho por <a class="text text-darck">KAREN ISABEL LOPEZ TORRES Y ARELI CAMACHO</a>
       </div>
     </div>
   </footer>

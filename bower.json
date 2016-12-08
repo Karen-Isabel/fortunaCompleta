@@ -3,7 +3,7 @@
   "description": "Proyecto Final PAW",
   "main": "server.js",
   "authors": [
-    "@RicardoHdez"
+    "@KarenLopez"
   ],
   "license": "ISC",
   "keywords": [
@@ -11,7 +11,7 @@
     "node",
     "server"
   ],
-  "homepage": "https://github.com/RicardoHdez/08fortune_cookie",
+  "homepage": "https://github.com/karenlopez/08fortune_cookie",
   "private": true,
   "ignore": [
     "**/.*",
