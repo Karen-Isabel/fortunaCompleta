@@ -64,7 +64,7 @@ mongoClient.connect(connectionUrl, function (err, db){
     
     //insertando frases a coleccion
     papers.insert({
-        "mensaje" : amigo
+        "papers" : amigo
     }, function (err, res){
         if(err){
             console.log(">no se pudo insertar.......");
